@@ -2,9 +2,7 @@ import { Injectable } from '@angular/core';
 import { AuthRequestsService } from './auth-requests.service';
 import { map } from 'rxjs/operators';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class AuthService {
   constructor(private authRequestService: AuthRequestsService) {}
 
